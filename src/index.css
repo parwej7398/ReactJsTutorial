@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*  all css  */
+
+
+
+.nav_parent_div {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 30px 8px 30px;
+}
+
+.left_div,
+.right_div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.black_div {
+  background: black;
+  color: white;
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.para:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.select_items {
+  text-decoration: none;
+  border: none;
+  background: white;
+
+}
+
+
+.search_parent {
+  display: flex;
+  align-items: center;
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 20px;
+
+}
+
+.search {
+  border: none;
+  outline: none;
+}
+
+.job_parent {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.space_child {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.get_certified {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 18px;
+  width: 18px;
+  white-space: nowrap;
+}
+
+.signup {
+  background: green;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 12px;
+  color: white;
+}
+
+.login {
+  border: 2px solid green;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 12px;
+  color: green;
+}
+
+hide-scroll::-webkit-scrollbar{
+  display: none;
+}
