@@ -5,6 +5,9 @@ import Map2 from './Map2';
 import Amazon from './Amazon';
 import DemoMap from '../src/demomap/index'
 import UseEffct from './UseEffect';
+import UseRefDemo from './UseRefDemo';
+import Props from './Props';
+import Props2 from './Props2';
   // import Map4 from './demomap/Map4';
 
 const App = () => {
@@ -16,6 +19,9 @@ const App = () => {
           <Route path="/amazon" element={<Amazon />} />
           <Route path="/demomap" element={<DemoMap />} />
           <Route path="/useeffect" element={<UseEffct />} />
+          <Route path="/useref" element={<UseRefDemo />} />
+          <Route path="/props" element={<Props />} />
+          <Route path="/props2" element={<Props2 />} />
           {/* <Route path='/map4' element={<Map4/>}/> */}
         </Routes>
       </BrowserRouter>
