@@ -9,6 +9,7 @@ import UseRefDemo from "./UseRefDemo";
 import Props from "./Props";
 import Props2 from "./Props2";
 import Products from "./Products";
+import UseRef from "./UseRef1";
 // import Map4 from './demomap/Map4';
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/props" element={<Props />} />
           <Route path="/props2" element={<Props2 />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/useref2" element={<UseRef />} />
           {/* <Route path='/map4' element={<Map4/>}/> */}
         </Routes>
       </BrowserRouter>

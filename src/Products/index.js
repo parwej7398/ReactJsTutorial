@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "../Shared/ProductCard";
+import ProductCard2 from "../Shared/ProductCard2";
 
 const Products = () => {
   const products = [
@@ -9,6 +10,10 @@ const Products = () => {
         "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/3/u/w/-original-imagtcrvzrqnnxpc.jpeg?q=70",
       price: 32999,
       discount: 15,
+      specifications: [
+        " 8 GB RAM | 256 GB ROM",
+        "16.51 cm (6.5 inch) Full HD+ Display",
+      ],
     },
     {
       name: "OPPO Reno10 5G (Silvery Grey, 256 GB)",
@@ -24,20 +29,32 @@ const Products = () => {
       price: 49999,
       discount: 20,
     },
+    {
+      name: "Apple iPhone 12 (Blue, 128 GB)",
+      image:
+        "https://rukminim2.flixcart.com/image/312/312/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70",
+      price: 49999,
+      discount: 20,
+    },
   ];
 
   return (
     <div className="bg-gray-200 h-screen flex flex-col gap-2 p-2">
-      <div className="grid grid-cols-6 gap-4 p-4">
-        {products.map((product) => {
+      {/* <div className="grid grid-cols-6 gap-4 p-4">
+        {products.map((i) => {
           return (
             <ProductCard
-              name={product.name}
-              price={product.price}
-              discount={product.discount}
-              image={product.image}
+              name={i.name}
+              price={i.price}
+              discount={i.discount}
+              image={i.image}
             />
           );
+        })}
+      </div> */}
+      <div className="grid grid-cols-6 gap-4 p-4">
+        {products.map((i) => {
+          return <ProductCard2 product={i} />;
         })}
       </div>
     </div>
