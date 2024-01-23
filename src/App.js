@@ -10,6 +10,9 @@ import Props from "./Props";
 import Props2 from "./Props2";
 import Products from "./Products";
 import UseRef from "./UseRef1";
+import Products2 from "./Products2";
+import PropsDrilling from "./PropDrilling";
+import UseContextDemo from "./UseContext";
 // import Map4 from './demomap/Map4';
 
 const App = () => {
@@ -17,6 +20,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Map2 />} />
           <Route path="/map2" element={<Map2 />} />
           <Route path="/amazon" element={<Amazon />} />
           <Route path="/demomap" element={<DemoMap />} />
@@ -26,6 +30,9 @@ const App = () => {
           <Route path="/props2" element={<Props2 />} />
           <Route path="/products" element={<Products />} />
           <Route path="/useref2" element={<UseRef />} />
+          <Route path="/products2" element={<Products2 />} />
+          <Route path="/prop-drilling" element={<PropsDrilling />} />
+          <Route path="/use-context" element={<UseContextDemo />} />
           {/* <Route path='/map4' element={<Map4/>}/> */}
         </Routes>
       </BrowserRouter>
