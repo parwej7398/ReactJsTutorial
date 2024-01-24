@@ -2,7 +2,9 @@ import React from "react";
 
 const ProductCard2 = ({ product }) => {
   const { image, name, price, discount, specifications } = product;
+
   const actual_price = price - (price * discount) / 100;
+
   return (
     <div className="flex flex-col bg-white rounded p-5 shadow">
       <img src={image} alt="" />

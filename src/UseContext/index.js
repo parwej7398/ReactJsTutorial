@@ -9,7 +9,6 @@ const UseContextDemo = () => {
   return (
     <div className="flex flex-col gap-3">
       <p>Hello {user} : Main Parent Component</p>
-
       <UserContext.Provider value={user}>
         <NameContext.Provider value={name}>
           <Component1 />
@@ -62,9 +61,10 @@ const Component5 = () => {
   return (
     <div className="border-2 border-red-500 p-2">
       <p>Component 5</p>
-
+      {/* provider */}
       <p>{user}</p>
       <p>{name}</p>
+      {/* consumer */}
       <UserContext.Consumer>
         {(user) => (
           <NameContext.Consumer>

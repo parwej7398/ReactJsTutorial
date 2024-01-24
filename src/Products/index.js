@@ -1,5 +1,4 @@
 import React from "react";
-import ProductCard from "../Shared/ProductCard";
 import ProductCard2 from "../Shared/ProductCard2";
 
 const Products = () => {
@@ -53,7 +52,7 @@ const Products = () => {
         })}
       </div> */}
       <div className="grid grid-cols-6 gap-4 p-4">
-        {products.map((i) => {
+        {products.map((i, index) => {
           return <ProductCard2 product={i} />;
         })}
       </div>
