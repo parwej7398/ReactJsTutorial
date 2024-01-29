@@ -1,4 +1,5 @@
 import Amazon from "../Amazon";
+import Layout from "../Layout";
 import Map2 from "../Map2";
 import Blog from "../Pages/Blog";
 import Products from "../Products";
@@ -52,11 +53,11 @@ export const routes = [
     path: "/props2",
     element: <Props2 />,
   },
-  {
-    id: 1,
-    path: "/products",
-    element: <Products />,
-  },
+  // {
+  //   id: 1,
+  //   path: "/products",
+  //   element: <Products />,
+  // },
   {
     id: 1,
     path: "/products2",
@@ -72,9 +73,24 @@ export const routes = [
     path: "/use-context",
     element: <UseContextDemo />,
   },
+  // {
+  //   id: 2,
+  //   path: "/blog",
+  //   element: <Layout children={<Blog />} />,
+  // },
+  // {
+  //   id: 2,
+  //   path: "/products",
+  //   element: <Layout children={<Products />} />,
+  // },
   {
     id: 2,
     path: "/blog",
     element: <Blog />,
+  },
+  {
+    id: 2,
+    path: "/products",
+    element: <Products />,
   },
 ];

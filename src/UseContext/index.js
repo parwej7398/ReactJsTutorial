@@ -11,14 +11,16 @@ const UseContextDemo = () => {
       <p>Hello {user} : Main Parent Component</p>
       <UserContext.Provider value={user}>
         <NameContext.Provider value={name}>
-          <Component1 />
+          <Component1 value1={user} value2={name} />
         </NameContext.Provider>
       </UserContext.Provider>
     </div>
   );
 };
 
-const Component1 = () => {
+const Component1 = ({ value1, value2 }) => {
+  console.log(value1);
+  console.log(value2);
   return (
     <div className="border-2 border-red-500 hover:border-blue-500 p-2">
       {/* <p> Hello from Component 1: {user}</p> */}
@@ -68,10 +70,10 @@ const Component5 = () => {
       <UserContext.Consumer>
         {(user) => (
           <NameContext.Consumer>
-            {(name) => (
+            {(data) => (
               <>
                 <p>User from Component 5: {user}</p>
-                <p>Name from Component 5: {name}</p>
+                <p>Name from Component 5: {data}</p>
               </>
             )}
           </NameContext.Consumer>
