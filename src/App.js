@@ -3,12 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { routes } from "./Routes";
 import Layout from "./Layout";
+import Login from "./Authentication/Login";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="/login" element={<Login />} />
           {routes.map((route, index) => {
             return (
               <Route
@@ -20,7 +22,7 @@ const App = () => {
           })}
           {/* {routes.map((route, index) => {
             return (
-              <Route key={index} path={route.path} element={ route.element} />
+              <Route key={index} path={route.path} element={route.element} />
             );
           })} */}
         </Routes>

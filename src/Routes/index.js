@@ -3,6 +3,7 @@ import Layout from "../Layout";
 import Map2 from "../Map2";
 import Blog from "../Pages/Blog";
 import Products from "../Products";
+import ProductDetail from "../Products/ProductDetail";
 import Products2 from "../Products2";
 import PropsDrilling from "../PropDrilling";
 import Props from "../Props";
@@ -92,5 +93,10 @@ export const routes = [
     id: 2,
     path: "/products",
     element: <Products />,
+  },
+  {
+    id: 2,
+    path: "/product/:id/:name",
+    element: <ProductDetail />,
   },
 ];

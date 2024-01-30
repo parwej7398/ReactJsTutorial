@@ -22,11 +22,14 @@ const Layout = ({ children }) => {
       navItem: "Props Drilling",
     },
   ];
+  console.log(window.location.search);
   return (
     <div className="flex flex-col h-screen">
+      {/* Header */}
       <div className="p-10 text-white flex gap-6 bg-black">
-        {navItems.map((nav) => {
+        {navItems.map((nav, index) => {
           const isActive = window.location.pathname === nav.to;
+          console.log(isActive, index);
           return (
             <Link
               key={nav.id}
@@ -42,9 +45,12 @@ const Layout = ({ children }) => {
         })}
       </div>
       <div className="flex h-full">
+        {/* Sidebar  */}
         <div className="bg-blue-500 h-full w-72">Sidebar</div>
+        {/* Body  */}
         <div>{children}</div>
       </div>
+      {/* Footer  */}
       <div className="bg-black text-white p-2">Footer</div>
     </div>
   );
