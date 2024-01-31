@@ -1,7 +1,7 @@
 import React from "react";
 
 const PropsDrilling = () => {
-  const user = "Pankaj";
+  const user = "Parwez";
   return (
     <div className="flex flex-col gap-3">
       <p>Hello {user} : Main Parent Component</p>
@@ -11,10 +11,7 @@ const PropsDrilling = () => {
 };
 
 const Component1 = ({ user }) => {
-  //   const { user } = props;
-  //   const user = props.user;
 
-  //   console.log(user);
   return (
     <div className="border-2 border-red-500 hover:border-blue-500 p-2">
       {/* <p> Hello from Component 1: {user}</p> */}

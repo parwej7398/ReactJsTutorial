@@ -4,7 +4,7 @@ const UserContext = createContext();
 const NameContext = createContext();
 
 const UseContextDemo = () => {
-  const user = "Aditya";
+  const user = "Parwez";
   const name = "Amir";
   return (
     <div className="flex flex-col gap-3">
@@ -19,11 +19,8 @@ const UseContextDemo = () => {
 };
 
 const Component1 = ({ value1, value2 }) => {
-  console.log(value1);
-  console.log(value2);
   return (
     <div className="border-2 border-red-500 hover:border-blue-500 p-2">
-      {/* <p> Hello from Component 1: {user}</p> */}
       <p className="hover:text-blue-500">Component 1</p>
       <Component2 />
     </div>
@@ -58,16 +55,25 @@ const Component4 = () => {
 const Component5 = () => {
   const user = useContext(UserContext);
   const name = useContext(NameContext);
-  //   console.log(user);
 
   return (
     <div className="border-2 border-red-500 p-2">
       <p>Component 5</p>
-      {/* provider */}
       <p>{user}</p>
       <p>{name}</p>
-      {/* consumer */}
-      <UserContext.Consumer>
+
+    </div>
+  );
+};
+
+export default UseContextDemo;
+
+
+
+
+
+
+{/* <UserContext.Consumer>
         {(user) => (
           <NameContext.Consumer>
             {(data) => (
@@ -78,9 +84,4 @@ const Component5 = () => {
             )}
           </NameContext.Consumer>
         )}
-      </UserContext.Consumer>
-    </div>
-  );
-};
-
-export default UseContextDemo;
+      </UserContext.Consumer> */}

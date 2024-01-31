@@ -13,18 +13,10 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           {routes.map((route, index) => {
             return (
-              <Route
-                key={index}
-                path={route.path}
-                element={<Layout children={route.element} />}
-              />
+              <Route key={index} path={route.path} element={<Layout children={route.element} />} />
             );
           })}
-          {/* {routes.map((route, index) => {
-            return (
-              <Route key={index} path={route.path} element={route.element} />
-            );
-          })} */}
+
         </Routes>
       </BrowserRouter>
     </>
@@ -32,3 +24,18 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+{/* {routes.map((route, index) => {
+            return (
+              <Route key={index} path={route.path} element={route.element} />
+            );
+          })} */}

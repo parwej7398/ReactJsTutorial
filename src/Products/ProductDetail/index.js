@@ -5,13 +5,7 @@ const ProductDetail = () => {
   const { id, name } = useParams();
   const { state } = useLocation();
 
-  console.log({ id });
-  console.log({ name });
-  console.log({ state });
 
-  const data = "Parvez";
-
-  const str = `Hello "Pankaj" 'Amir' ${data}`;
 
   return (
     <div className="flex flex-col items-center w-[50vw]">
@@ -28,3 +22,13 @@ const ProductDetail = () => {
 };
 
 export default ProductDetail;
+
+
+
+
+
+
+
+// const data = "Parvez";
+
+// const str = `Hello "Pankaj" 'Amir' ${data}`;

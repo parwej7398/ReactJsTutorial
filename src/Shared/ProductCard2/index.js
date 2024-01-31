@@ -8,12 +8,6 @@ const ProductCard2 = ({ product }) => {
 
   const navigate = useNavigate();
 
-  // const str = "Hello 'Pankaj' ";
-  // const str = `Hello "Pankaj" 'Amir' `;
-
-  const data = "Parvez";
-
-  const str = `Hello "Pankaj" 'Amir' ${data}`;
 
   return (
     <div
@@ -26,7 +20,8 @@ const ProductCard2 = ({ product }) => {
       <s>{price}</s>
       {/* <p className="line-through">₹{product.price}</p> */}
       <span className="flex items-center gap-2 ">
-        <p>₹{actual_price}</p> <p>{discount}%</p>
+        <p>₹{actual_price}</p>
+        <p>{discount}%</p>
       </span>
       {specifications?.map((specs) => {
         return <p key={specs}>{specs}</p>;
@@ -36,3 +31,19 @@ const ProductCard2 = ({ product }) => {
 };
 
 export default ProductCard2;
+
+
+
+
+
+
+
+
+
+// const str = "Hello 'Pankaj' ";
+// const str = `Hello "Pankaj" 'Amir' `;
+
+// const data = "Parvez";
+
+// const str = `Hello "Pankaj" 'Amir' ${data}`;
+
