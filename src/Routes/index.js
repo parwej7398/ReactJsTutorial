@@ -13,6 +13,7 @@ import DemoArray from "../demomap";
 import Products2 from "../Products2";
 import Layout from "../Layout";
 import UseReducerDemo from "../UseReducer";
+import Calculator from "../Calculator";
 
 
 export const routes = [
@@ -88,12 +89,6 @@ export const routes = [
     element: <Layout children={<Products />} />,
   },
 
-
-
-
-
-
-
   {
     id: 1,
     path: "/prop-drilling",
@@ -118,6 +113,11 @@ export const routes = [
     id: 2,
     path: "use-reducer",
     element: <UseReducerDemo />,
+  },
+  {
+    id: 2,
+    path: "calculator",
+    element: <Calculator />,
   },
 ];
 

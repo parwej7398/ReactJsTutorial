@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
+import UseReducerDemo from "../UseReducer";
 
 const Layout = ({ children }) => {
 
@@ -44,6 +45,11 @@ const Layout = ({ children }) => {
       id: 8,
       to: "/demomap",
       navItem: "UseRef",
+    },
+    {
+      id: 9,
+      to: "/use-reducer",
+      navItem: "UseReducerDemo"
     },
   ];
   return (
