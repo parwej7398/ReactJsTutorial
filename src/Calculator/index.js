@@ -12,20 +12,24 @@ const Calculator = () => {
             return 0
         }
         if (action.type === "Delete") {
-            const newValue = value.slice(0, value.length - 1)
+            const newValue = String(value).slice(0, value.length - 1)
 
-            // console.log(newValue.substring(0, newValue.length - 1));
             return newValue
+        }
+        if (action.type === "Total") {
+            return eval(value)
         }
 
     }
 
 
-    const [value, dispatch] = useReducer(reducers, 0)
+    const [value, dispatch] = useReducer(reducers, "")
 
     const handleInputValue = (value) => {
         dispatch({ type: "Input", value: value })
     }
+    const exp = "20 + 5"
+    // const exp1 = '20' + "5"
 
     return (
         <div className='flex min-h-screen justify-center items-center bg-gray-100'>
@@ -49,11 +53,20 @@ const Calculator = () => {
                     <CustomButton onClick={() => handleInputValue(8)}>8</CustomButton>
                     <CustomButton onClick={() => handleInputValue(9)}>9</CustomButton>
                     <CustomButton onClick={() => handleInputValue(0)}>0</CustomButton>
+                    <CustomButton onClick={() => handleInputValue('+')}>+</CustomButton>
+                    <CustomButton onClick={() => handleInputValue('-')}>-</CustomButton>
+                    <CustomButton onClick={() => handleInputValue('*')}>*</CustomButton>
+                    <CustomButton onClick={() => handleInputValue('/')}>/</CustomButton>
+                    <CustomButton onClick={() => dispatch({ type: 'Total' })}>=</CustomButton>
                 </div>
                 <div className='flex items-center p-2'>
                     <CustomButton>Add</CustomButton>
                     <CustomButton>Subtract</CustomButton>
                 </div>
+
+
+                <p>{exp} = {eval(exp)}</p>
+
             </div>
         </div>
     )

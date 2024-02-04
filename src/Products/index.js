@@ -102,22 +102,7 @@ const Products = () => {
       price: 32999,
       discount: 10,
     },
-    // {
-    //   id: 3,
-    //   name: "Apple iPhone 12 (Blue, 128 GB)",
-    //   image:
-    //     "https://rukminim2.flixcart.com/image/312/312/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70",
-    //   price: 49999,
-    //   discount: 20,
-    // },
-    // {
-    //   id: 4,
-    //   name: "Apple iPhone 12 (Blue, 128 GB)",
-    //   image:
-    //     "https://rukminim2.flixcart.com/image/312/312/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70",
-    //   price: 49999,
-    //   discount: 20,
-    // },
+
   ];
 
   return (

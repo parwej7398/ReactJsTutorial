@@ -14,6 +14,7 @@ import Products2 from "../Products2";
 import Layout from "../Layout";
 import UseReducerDemo from "../UseReducer";
 import Calculator from "../Calculator";
+import SpreadOperator from "../SpreadOperator";
 
 
 export const routes = [
@@ -118,6 +119,11 @@ export const routes = [
     id: 2,
     path: "calculator",
     element: <Calculator />,
+  },
+  {
+    id: 2,
+    path: "operator",
+    element: <SpreadOperator />,
   },
 ];
 
