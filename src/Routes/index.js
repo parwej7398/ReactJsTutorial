@@ -15,6 +15,7 @@ import Layout from "../Layout";
 import UseReducerDemo from "../UseReducer";
 import Calculator from "../Calculator";
 import SpreadOperator from "../SpreadOperator";
+import FormHandling from "../FormHandling";
 
 
 export const routes = [
@@ -124,6 +125,11 @@ export const routes = [
     id: 2,
     path: "operator",
     element: <SpreadOperator />,
+  },
+  {
+    id: 2,
+    path: "/form",
+    element: <FormHandling />,
   },
 ];
 
