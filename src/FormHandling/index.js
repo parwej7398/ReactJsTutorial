@@ -16,12 +16,6 @@ const FormHandling = () => {
 
         setPassword('')
     }
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         handleSubmit()
-    //     }, 3000000);
-    // }, [])
     console.log({ users });
 
     return (
@@ -38,8 +32,7 @@ const FormHandling = () => {
 
 
             <button disabled={!confirm} type='submit'>Submit</button>
-            {/* <button type='button'>Submit</button>
-            <button type='reset'>Reset</button> */}
+
         </form>
     )
 }

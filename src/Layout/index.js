@@ -103,7 +103,7 @@ const Layout = ({ children }) => {
           <hr />
         </div>
         {/* Body  */}
-        <div>{children}</div>
+        <div className="w-full">{children}</div>
       </div>
       {/* Footer  */}
       <div className="bg-black text-white p-2">Footer</div>
