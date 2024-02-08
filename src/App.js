@@ -12,8 +12,8 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/calculator" element={<Calculator />} />
+          {/* <Route path="/login" element={<Login />} />
+          <Route path="/calculator" element={<Calculator />} /> */}
           {routes.map((route, index) => {
             return (
               <Route key={index} path={route.path} element={<Layout children={route.element} />} />

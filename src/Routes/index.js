@@ -1,6 +1,6 @@
 import Amazon from "../Amazon";
 import Map2 from "../Map2";
-import Blog from "../Pages/Blog";
+
 import Products from "../Products";
 import ProductDetail from "../Products/ProductDetail";
 import PropsDrilling from "../PropDrilling";
@@ -17,6 +17,8 @@ import Calculator from "../Calculator";
 import SpreadOperator from "../SpreadOperator";
 import FormHandling from "../FormHandling";
 import ToDo from "../Todo";
+import Blog from "../Blog";
+import BlogDetail from "../Blog/BlogDetail";
 
 
 export const routes = [
@@ -97,11 +99,7 @@ export const routes = [
     path: "/prop-drilling",
     element: <PropsDrilling />,
   },
-  {
-    id: 2,
-    path: "/blog",
-    element: <Blog />,
-  },
+
   {
     id: 2,
     path: "/products",
@@ -136,6 +134,16 @@ export const routes = [
     id: 2,
     path: "/todo",
     element: <ToDo />,
+  },
+  {
+    id: 2,
+    path: "/blog",
+    element: <Blog />,
+  },
+  {
+    id: 2,
+    path: "/blog/:id",
+    element: <BlogDetail />,
   },
 ];
 

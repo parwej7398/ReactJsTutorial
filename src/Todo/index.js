@@ -1,4 +1,4 @@
-import { Button, Divider, IconButton, TextField } from '@mui/material';
+import { Divider, IconButton, TextField } from '@mui/material';
 import React, { useState } from 'react';
 import CustomButton from '../Shared/CustomButton';
 import { Delete } from '@mui/icons-material';
@@ -24,7 +24,7 @@ const ToDo = () => {
     return (
         <div className='flex flex-col gap-4 p-5 w-full'>
             <form onSubmit={(event) => handleSubmit(event)} className='grid gap-5 lg:w-1/3 w-full'>
-                <p className='text-2xl font-bold text-center'>To Do</p>
+                <p className='text-2xl font-bold text-center'>Todo</p>
                 <TextField label="Heading" type="text" placeholder='Enter To Do Heading' value={heading} fullWidth onChange={(event) => setHeading(event.target.value)} />
                 <TextField label="Content" multiline rows={3} type="text" placeholder='Enter To Do Content' fullWidth value={content} onChange={(event) => setContent(event.target.value)} />
                 <CustomButton type='submit'>Submit</CustomButton>
