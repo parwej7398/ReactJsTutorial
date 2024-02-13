@@ -17,14 +17,14 @@ const NewBlog = ({ data, setData }) => {
             date: 'June 1, 2020',
             views: '2.1K views'
         }])
-        localStorage.setItem('blogs', JSON.stringify([...data, {
-            id: 1,
-            imageUrl: 'https://source.unsplash.com/200x200/?lucknow',
-            title: title,
-            content: content,
-            date: 'June 1, 2020',
-            views: '2.1K views'
-        }]))
+        // localStorage.setItem('blogs', JSON.stringify([...data, {
+        //     id: 1,
+        //     imageUrl: 'https://source.unsplash.com/200x200/?lucknow',
+        //     title: title,
+        //     content: content,
+        //     date: 'June 1, 2020',
+        //     views: '2.1K views'
+        // }]))
         setOpen(false)
     }
 

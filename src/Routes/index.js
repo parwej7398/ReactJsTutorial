@@ -17,15 +17,16 @@ import Calculator from "../Calculator";
 import SpreadOperator from "../SpreadOperator";
 import FormHandling from "../FormHandling";
 import ToDo from "../Todo";
-import Blog from "../Blog";
+import Blogs from "../Blog";
 import BlogDetail from "../Blog/BlogDetail";
+import UnControlled from "../UnControlled";
 
 
 export const routes = [
   {
     id: 1,
     path: "/",
-    element: <Blog />,
+    element: <Blogs />,
   },
 
   {
@@ -138,12 +139,17 @@ export const routes = [
   {
     id: 2,
     path: "/blog",
-    element: <Blog />,
+    element: <Blogs />,
   },
   {
     id: 2,
-    path: "/blog/:id",
+    path: "/blog/:blog_id",
     element: <BlogDetail />,
+  },
+  {
+    id: 2,
+    path: "/uncontrolled",
+    element: <UnControlled />,
   },
 ];
 
