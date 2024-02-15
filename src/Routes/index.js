@@ -20,6 +20,8 @@ import ToDo from "../Todo";
 import Blogs from "../Blog";
 import BlogDetail from "../Blog/BlogDetail";
 import UnControlled from "../UnControlled";
+import BlogAPI from "../API/Blog";
+import BlogDetailAPI from "../API/BlogDetail";
 
 
 export const routes = [
@@ -150,6 +152,16 @@ export const routes = [
     id: 2,
     path: "/uncontrolled",
     element: <UnControlled />,
+  },
+  {
+    id: 2,
+    path: "/blog-api",
+    element: <BlogAPI />,
+  },
+  {
+    id: 2,
+    path: "/blog-api/:blog_id",
+    element: <BlogDetailAPI />,
   },
 ];
 

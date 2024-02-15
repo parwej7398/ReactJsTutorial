@@ -16,7 +16,7 @@ const UnControlled = () => {
         console.log(formdata.get('age'));
         setImage(formdata.get('image'))
         console.log(formdata.get('image'));
-        // for (const value of formdata.get()) {
+        // for (const value of formdata.get(){
         //     console.log(value);
         // }
     }
