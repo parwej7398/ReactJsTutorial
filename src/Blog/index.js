@@ -44,8 +44,8 @@ const Blog = () => {
             views: '2.1K views',
         },
     ])
-    // const blogs = JSON.parse(localStorage.getItem('blogs'))
 
+    // const blogs = JSON.parse(localStorage.getItem('blogs'))
 
     // useEffect(() => {
     //     localStorage.setItem('blogs', JSON.stringify(data))
@@ -66,10 +66,10 @@ const Blog = () => {
                             </div>
                             <IconButton color='error' className='!absolute !top-1 !right-2'> <Close /></IconButton>
                             <div className="flex flex-col flex-1 p-6">
-                                <a rel="noopener noreferrer" aria-label={article.title}></a>
-                                <a rel="noopener noreferrer" className="text-xs tracking uppercase hover:underline text-violet-600">
+                                <p rel="noopener noreferrer" aria-label={article.title}></p>
+                                <p rel="noopener noreferrer" className="text-xs tracking uppercase hover:underline text-violet-600">
                                     Convenire
-                                </a>
+                                </p>
                                 <p className="flex-1 py-2 text-lg font-semibold leadi">{article.title}</p>
                                 <p className='p-1'>{article?.content}</p>
                                 <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-600">

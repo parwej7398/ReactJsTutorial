@@ -22,6 +22,7 @@ import BlogDetail from "../Blog/BlogDetail";
 import UnControlled from "../UnControlled";
 import BlogAPI from "../API/Blog";
 import BlogDetailAPI from "../API/BlogDetail";
+import AsyncAwait from "../API/AsyncAwait";
 
 
 export const routes = [
@@ -162,6 +163,11 @@ export const routes = [
     id: 2,
     path: "/blog-api/:blog_id",
     element: <BlogDetailAPI />,
+  },
+  {
+    id: 2,
+    path: "/async-await",
+    element: <AsyncAwait />,
   },
 ];
 

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const BlogAPI = () => {
     const [data, setData] = useState([])
     const navigate = useNavigate()
+
     const fetchPosts = () => {
         fetch('https://jsonplaceholder.typicode.com/posts').then((res) =>
             res.json()
