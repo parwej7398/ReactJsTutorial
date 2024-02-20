@@ -23,6 +23,7 @@ import UnControlled from "../UnControlled";
 import BlogAPI from "../API/Blog";
 import BlogDetailAPI from "../API/BlogDetail";
 import AsyncAwait from "../API/AsyncAwait";
+import AddNewProduct from "../API/AddNewProduct";
 
 
 export const routes = [
@@ -168,6 +169,11 @@ export const routes = [
     id: 2,
     path: "/async-await",
     element: <AsyncAwait />,
+  },
+  {
+    id: 2,
+    path: "/addProduct",
+    element: <AddNewProduct />,
   },
 ];
 
