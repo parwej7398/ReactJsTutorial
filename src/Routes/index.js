@@ -24,6 +24,7 @@ import BlogAPI from "../API/Blog";
 import BlogDetailAPI from "../API/BlogDetail";
 import AsyncAwait from "../API/AsyncAwait";
 import AddNewProduct from "../API/AddNewProduct";
+import AxiosDemo from "../AxiosDemo";
 
 
 export const routes = [
@@ -174,6 +175,11 @@ export const routes = [
     id: 2,
     path: "/addProduct",
     element: <AddNewProduct />,
+  },
+  {
+    id: 2,
+    path: "/axios-demo",
+    element: <AxiosDemo />,
   },
 ];
 

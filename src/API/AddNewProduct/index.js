@@ -17,9 +17,7 @@ const AddNewProduct = () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(reqbody)
             })
-
             const data = await response.json()
-
             console.log(data);
         } catch (error) {
             console.log(error);
