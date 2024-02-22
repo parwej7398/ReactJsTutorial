@@ -2,18 +2,19 @@ import { Delete } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { axiosInstence1 } from '../Config/axios.config'
 
 const AxiosDemo = () => {
     const [data, setData] = useState([])
 
     const getPostsFn = async () => {
-        const response = await axios.get('https://dummyjson.com/posts', { params: { limit: 10 } })
+        const response = await axiosInstence1.get('posts', { params: { limit: 10 } })
         console.log(response);
         setData(response.data.posts)
     }
 
     const addNewPost = async () => {
-        await axios.post('https://dummyjson.com/posts/add', { title: "This New blog", userId: 5 })
+        await axios.post('https://dummyjson.com/posts/add', { title: "This New blogs", userId: 6 })
         alert("blog created")
     }
 

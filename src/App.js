@@ -5,6 +5,8 @@ import { routes } from "./Routes";
 import Layout from "./Layout";
 import Login from "./Authentication/Login";
 import Calculator from "./Calculator";
+import SignUp from "./Authentications/SignUp";
+import SignIn from "./Authentications/SignIn";
 
 
 const App = () => {
@@ -14,6 +16,10 @@ const App = () => {
         <Routes>
           {/* <Route path="/login" element={<Login />} />
           <Route path="/calculator" element={<Calculator />} /> */}
+
+          <Route path="/signup" Component={SignUp} />
+          <Route path="/signin" Component={SignIn} />
+
           {routes.map((route, index) => {
             return (
               <Route key={index} path={route.path} element={<Layout children={route.element} />} />
