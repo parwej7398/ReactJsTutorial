@@ -12,7 +12,7 @@ import Map3 from './Map3';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <App />   
+  <App />
   // </React.StrictMode>
 );
 

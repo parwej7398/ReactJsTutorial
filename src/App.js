@@ -7,7 +7,8 @@ import Login from "./Authentication/Login";
 import Calculator from "./Calculator";
 import SignUp from "./Authentications/SignUp";
 import SignIn from "./Authentications/SignIn";
-
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           })}
 
         </Routes>
+        <ToastContainer />
       </BrowserRouter>
     </>
   );
