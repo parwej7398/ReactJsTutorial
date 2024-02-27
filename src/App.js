@@ -9,6 +9,7 @@ import SignUp from "./Authentications/SignUp";
 import SignIn from "./Authentications/SignIn";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
+import FormikDemo from "./FormikDemo";
 
 const App = () => {
   return (
@@ -19,7 +20,10 @@ const App = () => {
           <Route path="/calculator" element={<Calculator />} /> */}
 
           <Route path="/signup" Component={SignUp} />
+
           <Route path="/signin" Component={SignIn} />
+
+          <Route path="/formik" Component={FormikDemo} />
 
           {routes.map((route, index) => {
             return (
