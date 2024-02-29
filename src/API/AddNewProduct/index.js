@@ -14,7 +14,7 @@ const AddNewProduct = () => {
         try {
             const response = await fetch('https://dummyjson.com/products/add', {
                 method: "POST",
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 'Content-Type': 'application/json', "Authorization": localStorage.getItem('token') },
                 body: JSON.stringify(reqbody)
             })
             const data = await response.json()

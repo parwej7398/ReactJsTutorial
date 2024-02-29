@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
+import ProfileMenu from "../Shared/ProfileMenu";
 
 const Layout = ({ children }) => {
 
@@ -59,16 +60,22 @@ const Layout = ({ children }) => {
   return (
     <div className="flex flex-col h-fit">
       {/* Header */}
-      <div className="p-2 text-white flex gap-6 bg-black">
-        {navItems.map((nav, index) => {
-          const isActive = window.location.pathname === nav.to;
-          console.log(isActive, index);
-          return (
-            <Link key={nav.id} to={nav.to} className={classNames("p-2 hover:bg-blue-300 rounded-xl", isActive && "bg-blue-500")}>
-              {nav.navItem}
-            </Link>
-          );
-        })}
+      <div className="p-2 text-white justify-between flex gap-6 bg-black px-5">
+        <div className="flex gap-5">
+          {navItems.map((nav, index) => {
+            const isActive = window.location.pathname === nav.to;
+            console.log(isActive, index);
+            return (
+              <Link key={nav.id} to={nav.to} className={classNames("p-2 hover:bg-blue-300 rounded-xl", isActive && "bg-blue-500")}>
+                {nav.navItem}
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="flex items-center">
+          <ProfileMenu />
+        </div>
       </div>
       <div className="flex h-full">
         {/* Sidebar  */}

@@ -7,3 +7,6 @@ const baseURL2 = 'https:/chatmkx.onrender.com/'
 
 export const axiosInstence1 = axios.create({ baseURL: baseURL1 })
 export const axiosInstence2 = axios.create({ baseURL: baseURL2 })
+
+
+//  

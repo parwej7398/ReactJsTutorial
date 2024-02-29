@@ -51,6 +51,16 @@ const Blog = () => {
     //     localStorage.setItem('blogs', JSON.stringify(data))
     // }, [blogs])
 
+
+    const token = localStorage.getItem('token')
+
+    useEffect(() => {
+        if (!token) {
+            navigate('/signin')
+        }
+    }, [])
+
+    console.log(token);
     return (
         <section className="py-6 sm:py-12 bg-gray-100 text-gray-800">
             <div className="container p-6 mx-auto space-y-8">

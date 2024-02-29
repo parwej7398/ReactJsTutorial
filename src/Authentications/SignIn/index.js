@@ -13,13 +13,9 @@ const SignIn = () => {
         event.preventDefault()
         if (password && email) {
             const response = await axiosInstence2.post('signin', { email, password })
-            // console.log(response.data.message);
-            // alert(response.data.message)
             toast.success(response.data.message)
-            // console.log(response.data.token);
             localStorage.setItem('token', response.data.token)
             navigate('/')
-
         } else {
 
             toast.error("Please Fill All Required Fields");

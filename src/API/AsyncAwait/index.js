@@ -16,9 +16,10 @@ const AsyncAwait = () => {
             // console.log(await response.json());
             const res = await response.json()
             setData(res.products)
-            setIsLoading(false)
+
         } catch (error) {
             console.log(error);
+
         } finally {
             setIsLoading(false)
         }
@@ -31,9 +32,10 @@ const AsyncAwait = () => {
 
     console.log(search);
     return (
-        <> <div className='p-3 flex gap-2'>
-            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className='p-2 border border-blue-200 outline-blue-400' /> <IconButton onClick={() => setSearch("")}><Close /></IconButton>
-        </div>
+        <>
+            <div className='p-3 flex gap-2'>
+                <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} className='p-2 border border-blue-200 outline-blue-400' /> <IconButton onClick={() => setSearch("")}><Close /></IconButton>
+            </div>
 
             <div className='grid grid-cols-4 gap-4 p-4'>
                 {isLoading ?
@@ -51,7 +53,9 @@ const AsyncAwait = () => {
 
                 {!isLoading && data?.length === 0 && <p>no data found with keyword : {search}</p>}
             </div>
-            <Button onClick={() => setLimit(limit + 10)}>Load More</Button></>
+            <Button onClick={() => setLimit(limit + 10)}>Load More</Button>
+
+        </>
 
     )
 }
